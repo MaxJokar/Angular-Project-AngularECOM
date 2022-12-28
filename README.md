@@ -1,4 +1,5 @@
 # MyWebsiteTest
+This Project include several Component such as : contact ,  About , Home , Test Unit using  Beecepter website , mentioned in Pitcure , Spinner for Loading Icon which is trendy , Using a powrful library "Material" using its Snackbar , after the submit you get a  toast or snack bar really cool visioally.I am going to fulfill it during NY holiday although lack of time. So, ..TO BE CONTINUED ! 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
