@@ -1,5 +1,7 @@
 # MyWebsiteTest
-This Project includes several Components such as : contact ,  About , Home , Test Unit using  Beecepter website ==>https://beeceptor.com/ and there are several too , really really cool and user friendly (we get fake RESTful also mocking data  really user friendly ) , mentioned in Pitcure , Spinner for Loading Icon which is trendy , Using a powrful library "Material" using its Snackbar , after the submit you get a  toast or snack bar really cool visioally.I am going to fulfill it during NY holiday although lack of time. So, ..TO BE CONTINUED ! 
+This Project includes several Components such as : contact ,  About , Home ,Using Bootstrap , RESTful api using  Beecepter website ==>https://beeceptor.com/ , really really cool and user friendly (we get fake RESTful also mocking data  really user friendly ) , mentioned in Pitcure , Spinner for Loading Icon which is trendy , Using a powrful library "Material" using its Snackbar , after the submit you get a  toast or snack bar really cool visioally
+in Contact menu there are severla field after filling , we send them to the server , recive the result as a Observable variable , it uses rxjs library
+.I am going to fulfill it during NY holiday although lack of time. So, ..TO BE CONTINUED ...!)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
