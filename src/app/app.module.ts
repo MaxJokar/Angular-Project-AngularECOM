@@ -14,6 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { GalleryComponent } from './gallery/gallery.component';
+import { PostsComponent } from './posts/posts.component';
 
 
 
@@ -26,7 +28,9 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     AboutComponent,
     ContactComponent,
     MainComponent,
-    NavbarComponent
+    NavbarComponent,
+    GalleryComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
