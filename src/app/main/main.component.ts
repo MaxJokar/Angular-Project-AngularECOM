@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent {
+  myimage:string = "../assets/images/Angular-Material-Theme.png";
+
 
 }

@@ -17,6 +17,8 @@ export class GalleryService {
 
 
   constructor(private http: HttpClient) { }
+
+
   // get datas and  bring them
   getPhotos(page:number =1): Observable<PhotoInterface[]> {
     return this.http.get(this.api.concat(page.toString())) as Observable<PhotoInterface[]> ;

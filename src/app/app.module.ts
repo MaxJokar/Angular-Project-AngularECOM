@@ -8,14 +8,15 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { MainComponent } from './main/main.component';
 import { NavbarComponent } from './main/navbar/navbar.component';
-import {  HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
-import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { GalleryComponent } from './gallery/gallery.component';
 import { PostsComponent } from './posts/posts.component';
+
 
 
 
@@ -30,7 +31,8 @@ import { PostsComponent } from './posts/posts.component';
     MainComponent,
     NavbarComponent,
     GalleryComponent,
-    PostsComponent
+    PostsComponent,
+
   ],
   imports: [
     BrowserModule,

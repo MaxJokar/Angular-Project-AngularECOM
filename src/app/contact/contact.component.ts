@@ -17,8 +17,8 @@ export class ContactComponent {
   name:string = '' ;
   email:string = '' ;
   desc:string = '' ;
-  // viewchild helps to introduce input to components
-  @ViewChild('txtName') txtName?:ElementRef
+  // viewchild helps to introduce input in contact.comp.html to components
+  @ViewChild('txtName') txtName?:ElementRef // can hold a reference to DOM
   @ViewChild('txtEmail') txtEmail?:ElementRef
   @ViewChild('txtDescription') txtDescription?:ElementRef
 
@@ -28,34 +28,12 @@ export class ContactComponent {
   ngOnInit(): void {
 
   }
+
+
   sendForm() {
-    // when we do not want to get data from server ,  a usual test
-    // this.isSubmitted = true ;
-    // this.name = this.txtName?.nativeElement.value;
-    // this.email = this.txtEmail?.nativeElement.value;
-    // this.desc = this.txtDescription?.nativeElement.value;
-
-
-
-    // this.isCallingAPI = true ;
-    // this.service.sendContactForm({
-    //   name: this.txtName!.nativeElement.value,
-    //   email: this.txtEmail!.nativeElement.value,
-    //   description: this.txtDescription!.nativeElement.value,
-    // }).subscribe(output=> {
-    //   console.log("server is working " , output);
-    //   this.isCallingAPI = false ;
-
-
-
-
-
-    //   // to get the response of our contact-form
-
-    // });
-
 
     this.isCallingAPI = true ;
+    // api is called by :sendContactForm
     this.service.sendContactForm({
       name: this.txtName!.nativeElement.value,
       email: this.txtEmail!.nativeElement.value,
