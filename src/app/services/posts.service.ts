@@ -12,8 +12,8 @@ import { Observable } from 'rxjs';
 
 
 export class PostsService {
-  //private api:string='https://jsonplaceholder.typicode.com/posts';
-  private api:string=  'https://picsum.photos/v2/list?limit=10page='
+  private api:string='https://jsonplaceholder.typicode.com/posts';
+
 
   constructor(private http: HttpClient) {
 

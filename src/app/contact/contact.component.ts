@@ -17,8 +17,8 @@ export class ContactComponent {
   name:string = '' ;
   email:string = '' ;
   desc:string = '' ;
-  // viewchild helps to introduce input in contact.comp.html to components
-  @ViewChild('txtName') txtName?:ElementRef // can hold a reference to DOM
+  // viewchild:access to native DOM & have a template reference contact.comp.html
+  @ViewChild('txtName') txtName?:ElementRef // ElementRef:in Browser its a DOM element
   @ViewChild('txtEmail') txtEmail?:ElementRef
   @ViewChild('txtDescription') txtDescription?:ElementRef
 
@@ -31,11 +31,11 @@ export class ContactComponent {
 
 
   sendForm() {
-
     this.isCallingAPI = true ;
+    //reactive programming :Observable,rxjs is happening!
     // api is called by :sendContactForm
     this.service.sendContactForm({
-      name: this.txtName!.nativeElement.value,
+      name: this.txtName!.nativeElement.value, //nativeElement: To manipulate DOM object
       email: this.txtEmail!.nativeElement.value,
       description: this.txtDescription!.nativeElement.value,
     }).subscribe(output=> {
@@ -51,17 +51,13 @@ export class ContactComponent {
           duration:3000
         })
 
-
-
       }
 
-
-
-
-
-      // to get the response of our contact-form
 
     });
 
   }
+
+
+
 }
